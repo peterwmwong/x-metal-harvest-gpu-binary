@@ -1,4 +1,4 @@
-This project harvests a simple Metal render pipeline and outputs error reproduction directions and observations about trying to generate a JSON Pipeline Scripts using `metal-source`.
+This project demonstrates the `metal-source: error: unsupported binary format` error when trying to use `metal-source` on a harvested GPU archive.
 
 This is associated to FB10274656 (Apple Feedback Assistant).
 
@@ -14,7 +14,11 @@ Using the session's ([5:55](https://developer.apple.com/videos/play/wwdc2022/101
 
 # Findings
 
-Running this project...
+Running this project serializes/harvests a GPU archive metallib file for a simple render pipeline.
+
+Using `metal-source` (project outputs specific command/arguments to use) on this metallib produces the error: `metal-source: error: unsupported binary format`.
+
+Here's a brief breakdown on how the GPU archive is created and the console output directions that follows:
 
 1. Opens a new window (SwiftUI/MTKView) displaying a white square (point primitive).
     - Render Pipeline Descriptor ([MetalRenderer.swift](./x-metal-harvest-gpu-binary/MetalRenderer.swift#L14-17))
@@ -58,7 +62,7 @@ Running this project...
     try archive.serialize(to: NSURL.fileURL(withPath: archivePath))
     ```
 
-3. If successful, outputs to console the GPU Archive's path and `metal-source` command to reproduce error and observed error on a MacBook Pro 2021 M1 Max, macOS Version 13.0 Beta 22A5266r, Xcode Version 14.0 beta 14A5228 environment.
+3. If successful, outputs to console the GPU Archive's path and `metal-source` command that reproduces the error
     - Example output:
 
     ```
