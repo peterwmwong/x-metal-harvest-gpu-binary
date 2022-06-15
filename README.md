@@ -1,5 +1,7 @@
 This project harvests a simple Metal render pipeline and outputs error reproduction directions and observations about trying to generate a JSON Pipeline Scripts using `metal-source`.
 
+This is associated to FB10274656 (Apple Feedback Assistant).
+
 # Background
 
 The WWDC 2022 session [Target and optimize GPU binaries with Metal 3](https://developer.apple.com/videos/play/wwdc2022/10102/) suggests the `metal-source` tool can generate the JSON Pipeline Scripts.
