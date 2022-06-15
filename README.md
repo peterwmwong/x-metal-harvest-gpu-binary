@@ -1,4 +1,4 @@
-This project harvests a simple Metal render pipeline and outputs reproduction directions and observations about trying to generate a JSON Pipeline Scripts using `metal-source`.
+This project harvests a simple Metal render pipeline and outputs error reproduction directions and observations about trying to generate a JSON Pipeline Scripts using `metal-source`.
 
 # Background
 
@@ -6,8 +6,8 @@ The WWDC 2022 session [Target and optimize GPU binaries with Metal 3](https://de
 
 Using the session's ([5:55](https://developer.apple.com/videos/play/wwdc2022/10102/?time=355)) command line directions:
 
-```json
-metal-source -flatbuffers=json harvested-binaryArchive.metallib -o /tmp/descriptors.mtlp-json
+```sh
+> metal-source -flatbuffers=json harvested-binaryArchive.metallib -o /tmp/descriptors.mtlp-json
 ```
 
 # Findings
@@ -15,6 +15,37 @@ metal-source -flatbuffers=json harvested-binaryArchive.metallib -o /tmp/descript
 Running this project...
 
 1. Opens a new window (SwiftUI/MTKView) displaying a white square (point primitive).
+    - Render Pipeline Descriptor ([MetalRenderer.swift](./x-metal-harvest-gpu-binary/MetalRenderer.swift#L14-17))
+        ```swift
+        let pipelineDesc = MTLRenderPipelineDescriptor()
+        pipelineDesc.vertexFunction = lib.makeFunction(name: "main_vertex")
+        pipelineDesc.fragmentFunction = lib.makeFunction(name: "main_fragment")
+        pipelineDesc.colorAttachments[0]?.pixelFormat = .bgra8Unorm
+        ```
+    - Shaders ([Shaders.metal](./x-metal-harvest-gpu-binary/Shaders.metal))
+        ```metal
+        #include <metal_stdlib>
+        using namespace metal;
+
+        struct VertexOut {
+            float4 position  [[position]];
+            float point_size [[point_size]];
+        };
+
+
+        [[vertex]]
+        VertexOut main_vertex() {
+            return {
+                .position = float4(0),
+                .point_size = 128.0
+            };
+        }
+
+        [[fragment]]
+        half4 main_fragment() {
+            return half4(1);
+        }
+        ```
 
 2. Behind the scenes, a GPU Archive is generated ([MetalRenderer.swift](./x-metal-harvest-gpu-binary/MetalRenderer.swift#L19-23)):
     ```swift
@@ -24,7 +55,6 @@ Running this project...
     try archive.addRenderPipelineFunctions(descriptor: pipelineDesc)
     try archive.serialize(to: NSURL.fileURL(withPath: archivePath))
     ```
-    https://github.com/peterwmwong/x-metal-harvest-gpu-binary/blob/519edd273b016d6c12f0692be4f4af0f00074b35/x-metal-harvest-gpu-binary/MetalRenderer.swift#L19-L23
 
 3. If successful, outputs to console the GPU Archive's path and `metal-source` command to reproduce error and observed error on a MacBook Pro 2021 M1 Max, macOS Version 13.0 Beta 22A5266r, Version 14.0 beta 14A5228 environment.
     - Example output:
