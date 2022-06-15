@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13AF2179285A2FD90088264C /* x_metal_harvest_gpu_binaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF2178285A2FD90088264C /* x_metal_harvest_gpu_binaryApp.swift */; };
+		13AF217D285A2FDA0088264C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AF217C285A2FDA0088264C /* Assets.xcassets */; };
+		13AF2180285A2FDA0088264C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AF217F285A2FDA0088264C /* Preview Assets.xcassets */; };
+		13AF2188285A30300088264C /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF2187285A30300088264C /* MetalRenderer.swift */; };
+		13AF218A285A30830088264C /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 13AF2189285A30830088264C /* Shaders.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13AF2175285A2FD90088264C /* x-metal-harvest-gpu-binary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "x-metal-harvest-gpu-binary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13AF2178285A2FD90088264C /* x_metal_harvest_gpu_binaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = x_metal_harvest_gpu_binaryApp.swift; sourceTree = "<group>"; };
+		13AF217C285A2FDA0088264C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13AF217F285A2FDA0088264C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		13AF2181285A2FDA0088264C /* x_metal_harvest_gpu_binary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = x_metal_harvest_gpu_binary.entitlements; sourceTree = "<group>"; };
+		13AF2187285A30300088264C /* MetalRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
+		13AF2189285A30830088264C /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13AF2172285A2FD90088264C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13AF216C285A2FD90088264C = {
+			isa = PBXGroup;
+			children = (
+				13AF2177285A2FD90088264C /* x-metal-harvest-gpu-binary */,
+				13AF2176285A2FD90088264C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13AF2176285A2FD90088264C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13AF2175285A2FD90088264C /* x-metal-harvest-gpu-binary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13AF2177285A2FD90088264C /* x-metal-harvest-gpu-binary */ = {
+			isa = PBXGroup;
+			children = (
+				13AF2178285A2FD90088264C /* x_metal_harvest_gpu_binaryApp.swift */,
+				13AF2187285A30300088264C /* MetalRenderer.swift */,
+				13AF2189285A30830088264C /* Shaders.metal */,
+				13AF217C285A2FDA0088264C /* Assets.xcassets */,
+				13AF2181285A2FDA0088264C /* x_metal_harvest_gpu_binary.entitlements */,
+				13AF217E285A2FDA0088264C /* Preview Content */,
+			);
+			path = "x-metal-harvest-gpu-binary";
+			sourceTree = "<group>";
+		};
+		13AF217E285A2FDA0088264C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				13AF217F285A2FDA0088264C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13AF2174285A2FD90088264C /* x-metal-harvest-gpu-binary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13AF2184285A2FDA0088264C /* Build configuration list for PBXNativeTarget "x-metal-harvest-gpu-binary" */;
+			buildPhases = (
+				13AF2171285A2FD90088264C /* Sources */,
+				13AF2172285A2FD90088264C /* Frameworks */,
+				13AF2173285A2FD90088264C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "x-metal-harvest-gpu-binary";
+			productName = "x-metal-harvest-gpu-binary";
+			productReference = 13AF2175285A2FD90088264C /* x-metal-harvest-gpu-binary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13AF216D285A2FD90088264C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					13AF2174285A2FD90088264C = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 13AF2170285A2FD90088264C /* Build configuration list for PBXProject "x-metal-harvest-gpu-binary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13AF216C285A2FD90088264C;
+			productRefGroup = 13AF2176285A2FD90088264C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13AF2174285A2FD90088264C /* x-metal-harvest-gpu-binary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13AF2173285A2FD90088264C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13AF2180285A2FDA0088264C /* Preview Assets.xcassets in Resources */,
+				13AF217D285A2FDA0088264C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13AF2171285A2FD90088264C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13AF218A285A30830088264C /* Shaders.metal in Sources */,
+				13AF2179285A2FD90088264C /* x_metal_harvest_gpu_binaryApp.swift in Sources */,
+				13AF2188285A30300088264C /* MetalRenderer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13AF2182285A2FDA0088264C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13AF2183285A2FDA0088264C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		13AF2185285A2FDA0088264C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "x-metal-harvest-gpu-binary/x_metal_harvest_gpu_binary.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"x-metal-harvest-gpu-binary/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pwong.x-metal-harvest-gpu-binary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		13AF2186285A2FDA0088264C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "x-metal-harvest-gpu-binary/x_metal_harvest_gpu_binary.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"x-metal-harvest-gpu-binary/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pwong.x-metal-harvest-gpu-binary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13AF2170285A2FD90088264C /* Build configuration list for PBXProject "x-metal-harvest-gpu-binary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13AF2182285A2FDA0088264C /* Debug */,
+				13AF2183285A2FDA0088264C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13AF2184285A2FDA0088264C /* Build configuration list for PBXNativeTarget "x-metal-harvest-gpu-binary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13AF2185285A2FDA0088264C /* Debug */,
+				13AF2186285A2FDA0088264C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13AF216D285A2FD90088264C /* Project object */;
+}
