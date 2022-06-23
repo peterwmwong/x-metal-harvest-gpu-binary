@@ -71,10 +71,10 @@ Here's a brief breakdown on how the GPU archive is created and the console outpu
 
     > xcrun metal-source -flatbuffers=json /var/folders/bd/9qd81pgj4xj01bg4sgp43dvr0000gn/T/x-metal-harvested-gpu-binary.metallib -o /tmp/descriptors.mtlp-json
 
-    Notice an error occurs (based on MacBook Pro 2021 M1 Max, macOS Version 13.0 Beta 22A5266r, Xcode Version 14.0 beta 14A5228 environment):
+    Notice an error occurs (based on MacBook Pro 2021 M1 Max, macOS Version 13.0 Beta 2 22A5286j, Xcode Version 14.0 beta 2 14A5229c environment):
     metal-source: error: unsupported binary format
 
-    Basic information about harvested GPU archive (based on MacBook Pro 2021 M1 Max, macOS Version 13.0 Beta 22A5266r, Xcode Version 14.0 beta 14A5228 environment):
+    Basic information about harvested GPU archive (based on MacBook Pro 2021 M1 Max, macOS Version 13.0 Beta 2 22A5286j, Xcode Version 14.0 beta 2 14A5229c environment):
     > xcrun metal-readobj /var/folders/bd/9qd81pgj4xj01bg4sgp43dvr0000gn/T/x-metal-harvested-gpu-binary.metallib
 
     File: /var/folders/bd/9qd81pgj4xj01bg4sgp43dvr0000gn/T/x-metal-harvested-gpu-binary.metallib

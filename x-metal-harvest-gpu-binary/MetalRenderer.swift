@@ -29,10 +29,10 @@ In a terminal, attempt the following command to generate the JSON Pipeline Scrip
 
   > xcrun metal-source -flatbuffers=json \(archivePath) -o /tmp/descriptors.mtlp-json
 
-Notice an error occurs (based on MacBook Pro 2021 M1 Max, macOS Version 13.0 Beta 22A5266r, Xcode Version 14.0 beta 14A5228 environment):
+Notice an error occurs (based on MacBook Pro 2021 M1 Max, macOS Version 13.0 Beta 2 22A5286j, Xcode Version 14.0 beta 2 14A5229c environment):
   metal-source: error: unsupported binary format
 
-Basic information about harvested GPU archive (based on MacBook Pro 2021 M1 Max, macOS Version 13.0 Beta 22A5266r, Xcode Version 14.0 beta 14A5228 environment):
+Basic information about harvested GPU archive (based on MacBook Pro 2021 M1 Max, macOS Version 13.0 Beta 2 22A5286j, Xcode Version 14.0 beta 2 14A5229c environment):
   > xcrun metal-readobj \(archivePath)
 
   File: \(archivePath)
